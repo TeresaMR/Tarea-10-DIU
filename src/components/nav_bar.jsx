@@ -4,17 +4,18 @@ import { NavLink } from 'react-router-dom'
 export const NavBar = () => {
   return (
     <nav className='nav-bar'>
+      
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
         to='/'
       >
-        Página de inicio
+        Inicio
       </NavLink>
       <NavLink
         className={({ isActive }) => `nav-bar__link ${isActive ? 'nav-bar__link--active' : ''}`}
         to='/internal'
       >
-        Página Interna
+        Eventos
       </NavLink>
     </nav>
   )

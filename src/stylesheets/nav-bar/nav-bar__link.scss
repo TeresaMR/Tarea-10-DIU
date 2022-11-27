@@ -2,9 +2,11 @@
   display: inline-block;
   margin-right: 15px;
   padding: 8px;
+  color: #626567;
+  text-decoration: none;
 
   &--active {
-    background: #222;
+    background: #424949;
     color: white;
   }
 }

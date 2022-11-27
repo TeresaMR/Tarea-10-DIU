@@ -3,3 +3,12 @@
   padding: 20px;
   margin: 20px;
 }
+
+.logo{
+  display: flex;
+  flex-direction: row;
+
+  img{
+    margin-right: 10px;
+  }
+}
