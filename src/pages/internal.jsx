@@ -6,6 +6,8 @@ import LogoUSM from '../assets/usm.png'
 import Calendar from '../components/calendar'
 import Calendario from '../components/calendario'
 
+const fecha = new Date(2018, 11);
+
 export const InternalPage = () => {
   return (
     <div className='page'>
@@ -18,7 +20,7 @@ export const InternalPage = () => {
       <div className='base' style={{
             display: 'grid',
             aspectRatio: '1/1',
-            width: '80%',
+            width: '60%',
             gridTemplateColumns: 'repeat(7, 1fr)',
             gridTemplateRows: 'repeat(7, 1fr)',
             gap: '1px'
@@ -26,7 +28,7 @@ export const InternalPage = () => {
             {
               ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'].map((day, key) => {
                 return (
-                  <div key={key} style={{gridColumn: (key+1).toString(), gridRow: '1', fontSize: '2vw', textAlign: 'center', alignSelf: 'center'}}>
+                  <div key={key} style={{gridColumn: (key+1).toString(), gridRow: '1', fontSize: '1vw', textAlign: 'center', alignSelf: 'center'}}>
                     {day}
                   </div>    
                 )
@@ -35,8 +37,8 @@ export const InternalPage = () => {
             {
               [1,2,3,4,5,6,7].map((col) => {
                 return(
-                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '2', fontSize: '2vw', textAlign: 'center', alignSelf: 'center'}}>
-                    1
+                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '2', fontSize: '1vw', textAlign: 'center', alignSelf: 'center', width: '100%', height: '100%', border: '1px solid black'}}>
+                    {fecha.getMonth()}
                   </div>
                 )
               })
@@ -44,8 +46,8 @@ export const InternalPage = () => {
             {
               [1,2,3,4,5,6,7].map((col) => {
                 return(
-                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '3', fontSize: '2vw', textAlign: 'center', alignSelf: 'center'}}>
-                    2
+                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '3', fontSize: '1vw', textAlign: 'center', alignSelf: 'center', width: '100%', height: '100%', border: '1px solid black'}}>
+                    {fecha.getDay()}
                   </div>
                 )
               })
@@ -53,7 +55,7 @@ export const InternalPage = () => {
             {
               [1,2,3,4,5,6,7].map((col) => {
                 return(
-                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '4', fontSize: '2vw', textAlign: 'center', alignSelf: 'center'}}>
+                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '4', fontSize: '1vw', textAlign: 'center', alignSelf: 'center', width: '100%', height: '100%', border: '1px solid black'}}>
                     3
                   </div>
                 )
@@ -62,7 +64,7 @@ export const InternalPage = () => {
             {
               [1,2,3,4,5,6,7].map((col) => {
                 return(
-                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '5', fontSize: '2vw', textAlign: 'center', alignSelf: 'center'}}>
+                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '5', fontSize: '1vw', textAlign: 'center', alignSelf: 'center', width: '100%', height: '100%', border: '1px solid black'}}>
                     4
                   </div>
                 )
@@ -71,7 +73,7 @@ export const InternalPage = () => {
             {
               [1,2,3,4,5,6,7].map((col) => {
                 return(
-                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '6', fontSize: '2vw', textAlign: 'center', alignSelf: 'center'}}>
+                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '6', fontSize: '1vw', textAlign: 'center', alignSelf: 'center', width: '100%', height: '100%', border: '1px solid black'}}>
                     5
                   </div>
                 )
