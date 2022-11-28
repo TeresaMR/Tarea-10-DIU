@@ -1,6 +1,7 @@
 import React from 'react'
 import { Button } from '@mui/material'
-
+import AddIcon from '@mui/icons-material/Add'
+import IconButton from '@mui/material/IconButton'
 import NavBar from '../components/nav_bar'
 import LogoUSM from '../assets/usm.png'
 import Calendar from '../components/calendar'
@@ -17,7 +18,14 @@ export const InternalPage = () => {
       </div>
       <NavBar />
       <h2>Calendario</h2>
-      <div className='base' style={{
+      <Calendar />
+
+
+
+
+
+      
+      {/*<div className='base' style={{
             display: 'grid',
             aspectRatio: '1/1',
             width: '60%',
@@ -55,8 +63,13 @@ export const InternalPage = () => {
             {
               [1,2,3,4,5,6,7].map((col) => {
                 return(
-                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '4', fontSize: '1vw', textAlign: 'center', alignSelf: 'center', width: '100%', height: '100%', border: '1px solid black'}}>
+                  <div key={col} style={{gridColumn: (col).toString(), gridRow: '4', fontSize: '1vw', width: '100%', height: '100%', border: '1px solid black', display: "grid", gridTemplateColumns: "repeat(3,1fr)"}}>
                     3
+                    <div style={{gridColumn: "3"}}>
+                      <IconButton color="primary" aria-label="agregar un evento" sx={{width:"auto"}}>
+                        <AddIcon />
+                      </IconButton>
+                    </div>
                   </div>
                 )
               })
@@ -79,7 +92,7 @@ export const InternalPage = () => {
                 )
               })
             }
-        </div>
+        </div>*/}
     </div>
   )
 }
