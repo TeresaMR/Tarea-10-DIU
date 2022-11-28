@@ -19,6 +19,7 @@ export const InternalPage = () => {
       <NavBar />
       <h2>Calendario</h2>
       <Calendar />
+      
 
 
 
